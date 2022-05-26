@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Hello, world!</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="icon" href="img/favicon.png">
+  <meta name="theme-color" content="">
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="" />
+  <meta name="twitter:card" content="">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+
+  <style>
+    body {
+      background-color: #F4BFBF;
+    }
+    #cat {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      max-width: 500px;
+      min-width: 40%;
+    }
+    #cat:active {
+      max-width: 400px;
+    }
+  </style>
+</head>
+
+<body>
+  <script>
+    function play() {
+      var audio = document.getElementById("audio");
+      audio.play();
+    }
+  </script>
+
+  <audio id="audio" src="click.wav"></audio>
+
+  <img id="cat" onmousedown="play()" src="cat.png"/>
+</body>
+
+</html>
