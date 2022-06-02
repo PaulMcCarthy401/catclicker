@@ -39,12 +39,11 @@
 <body>
   <script>
     function play() {
-      var audio = document.getElementById("audio");
+      let audio = new Audio('click.wav');
+      audio.load();
       audio.play();
     }
   </script>
-
-  <audio id="audio" src="click.wav"></audio>
 
   <img id="cat" onclick="play()" src="cat.png"/>
 </body>
